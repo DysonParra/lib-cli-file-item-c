@@ -143,7 +143,7 @@ appR:
 # Make all the targets.
 all:
 	make clean
-	make dLib
+	make file_item$(dLibMakeFormat)
 	make app
 	./$(appName)
 
