@@ -153,11 +153,11 @@ LANGUAGE DLLIMPORT CALLING FileList* makeFileList(char* path, char* formats) {
     // printf("'%s'\n", buf);                                           // Muestra el comando para crear el archivo con la lista de archivos.
     system(buf);                                                        // Crea el archivo con la lista de archivos.
     FILE* fp = fopen("list.tmp", "r");                                  // Abre "list.tmp".
-    char fileName[300] = "";                                            // Crea arra para almacenar cada archivo.
+    char fileName[1024] = "";                                           // Crea array para almacenar cada archivo.
     FileItem* aux = NULL;                                               // Crea un apuntador a un FileItem.
 
     while (!feof(fp)) {                                                 // Mientras no se recorra todo list.tmp.
-        fgets(fileName, 300, fp);                                       // Almacena la linea actual en filename.
+        fgets(fileName, 1024, fp);                                       // Almacena la linea actual en filename.
 
         if (feof(fp))                                                   // Si termino de reorrer el archivo.
             break;                                                      // Sale del ciclo.
