@@ -70,7 +70,7 @@ BOOL APIENTRY DllMain(HINSTANCE instance, DWORD reason, LPVOID reserved) {
 #endif
 
 /**
- * FIXME: Definición de {@code compareArrays}.
+ * FIXME: Description of {@code compareArrays}.
  * Compara dos arrays sin diferenciar entre mayúsculas y minúsculas.
  */
 CALLING int compareArrays(char* array1, char* array2) {
@@ -97,7 +97,7 @@ CALLING int compareArrays(char* array1, char* array2) {
 }
 
 /**
- * FIXME: Definición de {@code newFileItem}.
+ * FIXME: Description of {@code newFileItem}.
  * Agrega un FileItem a una lista de FileItem.
  */
 CALLING void newFileItem(FileList* list, char* name) {
@@ -119,7 +119,7 @@ CALLING void newFileItem(FileList* list, char* name) {
 }
 
 /**
- * FIXME: Definición de {@code makeFileList}.
+ * FIXME: Description of {@code makeFileList}.
  * Crea una lista de FileItem con todos los archivos en "path" terminados en los formatos indicados por "formats".
  */
 LANGUAGE DLLIMPORT CALLING FileList* makeFileList(char* path, char* formats) {
@@ -185,7 +185,7 @@ LANGUAGE DLLIMPORT CALLING FileList* makeFileList(char* path, char* formats) {
 }
 
 /**
- * FIXME: Definición de {@code printFileList}.
+ * FIXME: Description of {@code printFileList}.
  * printList muestra los elementos de una lista ligada parámetro en pantalla.
  */
 LANGUAGE DLLIMPORT CALLING void printFileList(FileList* list) {
@@ -204,7 +204,7 @@ LANGUAGE DLLIMPORT CALLING void printFileList(FileList* list) {
 }
 
 /**
- * FIXME: Definición de {@code getName}.
+ * FIXME: Description of {@code getName}.
  * Obtiene el nombre de una cadena con la ruta absoluta o relativa de un archivo.
  */
 LANGUAGE DLLIMPORT CALLING char* getName(char* file) {
@@ -220,7 +220,7 @@ LANGUAGE DLLIMPORT CALLING char* getName(char* file) {
 }
 
 /**
- * FIXME: Definición de {@code getFormat}.
+ * FIXME: Description of {@code getFormat}.
  * Obtiene el formato de una cadena con la ruta de un archivo.
  */
 LANGUAGE DLLIMPORT CALLING char* getFormat(char* file) {
@@ -236,7 +236,7 @@ LANGUAGE DLLIMPORT CALLING char* getFormat(char* file) {
 }
 
 /**
- * FIXME: Definición de {@code getFullPath}.
+ * FIXME: Description of {@code getFullPath}.
  * Obtiene la ruta absoluta del archivo indicado por filePath.
  */
 LANGUAGE DLLIMPORT CALLING char* getFullPath(char* filePath) {
@@ -258,7 +258,7 @@ LANGUAGE DLLIMPORT CALLING char* getFullPath(char* filePath) {
 }
 
 /**
- * FIXME: Definición de {@code getFatherPath}.
+ * FIXME: Description of {@code getFatherPath}.
  * Obtiene la ruta absoluta del directorio padre dle archivo indicado por filePath.
  */
 LANGUAGE DLLIMPORT CALLING char* getFatherPath(char* filePath) {
@@ -277,7 +277,7 @@ LANGUAGE DLLIMPORT CALLING char* getFatherPath(char* filePath) {
 }
 
 /**
- * FIXME: Definición de {@code getFileSize}.
+ * FIXME: Description of {@code getFileSize}.
  * Obtiene el tamaño de un archivo. El resultado se genera en bytes, divisios indica cuantas veces se dividirá por 1024. (1 = KB, 2 = MB, 3 = GB).
  */
 LANGUAGE DLLIMPORT CALLING double getFileSize(char* fileName, int divisions) {
